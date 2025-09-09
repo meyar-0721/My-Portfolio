@@ -1,0 +1,176 @@
+
+
+
+ 
+ /* ========= BREAKPOINT: max-width 1400px ========= */
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+}
+
+/* ========= BREAKPOINT: max-width 1200px ========= */
+@media screen and (max-width: 1200px) {
+  /* Navigation */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  /* Layout adjustments */
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .section-pic_container {
+    width: 275px;
+    height: 275px; /* Fixed missing unit */
+    margin: 0 auto 2rem; /* Fixed incorrect "0 auto2rem" */
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+/* ========= BREAKPOINT: max-width 600px ========= */
+@media screen and (max-width: 600px) {
+  /* Contact and Footer */
+  #contact,
+  footer {
+    height: 40vh;
+  }
+
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  /* Flex Containers */
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .about-info-container {
+    margin: auto;
+  }
+
+  /* Text & Font Sizes */
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem; /* Fixed spacing issue: was "1 rem" */
+  }
+
+  .skills-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  /* Navigation */
+  .nav-link {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  /* Section Picture */
+  .section-pic_container {
+    width: auto;
+    height: 56vw;
+    justify-content: center;
+  }
+
+  .section-text-p2 {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+
+  /* CONTACT SECTION - COMMON STYLES */
+.contact-info-upper-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  text-align: center;
+}
+
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info-container p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.contact-info-container a {
+  color: black; 
+  text-decoration: none;
+  word-break: break-word;
+}
+
+/* CONTACT SECTION - MOBILE RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .contact-info-upper-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+}
+
+}
