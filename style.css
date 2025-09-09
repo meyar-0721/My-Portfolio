@@ -348,3 +348,8 @@ footer p {
 #instagram-logo, #linkedin-logo{
   cursor: pointer;
 }
+#id{
+   border-radius: 15px;
+}
+
+
